@@ -1,0 +1,5 @@
+/Users/lull/RiderProjects/Lexer/Lexer/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttribute.cs
+/Users/lull/RiderProjects/Lexer/Lexer/bin/Debug/Lexer.pdb
+/Users/lull/RiderProjects/Lexer/Lexer/bin/Debug/Lexer.exe
+/Users/lull/RiderProjects/Lexer/Lexer/obj/Debug/Lexer.exe
+/Users/lull/RiderProjects/Lexer/Lexer/obj/Debug/Lexer.pdb

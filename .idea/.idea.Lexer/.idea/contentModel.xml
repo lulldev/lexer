@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_Lexer.424545810.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="Lexer" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Lexer" t="Include">
+          <e p="Lexer.cs" t="Include" />
+        </e>
+        <e p="Lexer.csproj" t="IncludeRecursive" />
+        <e p="Matcher" t="Include">
+          <e p="IMatcher.cs" t="Include" />
+          <e p="MatchComment.cs" t="Include" />
+          <e p="MatcherBase.cs" t="Include" />
+          <e p="MatchKeyword.cs" t="Include" />
+          <e p="MatchNumber.cs" t="Include" />
+          <e p="MatchString.cs" t="Include" />
+          <e p="MatchWhiteSpace.cs" t="Include" />
+          <e p="MatchWord.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Token" t="Include">
+          <e p="Token.cs" t="Include" />
+          <e p="TokenizableStreamBase.cs" t="Include" />
+          <e p="Tokenizer.cs" t="Include" />
+          <e p="TokenType.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Lexer.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
