@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+using System.IO;
 
 namespace Lexer
 {
@@ -7,15 +7,30 @@ namespace Lexer
     {
         static void Main()
         {
-            var text = @"321dsa void inT321  @ # & $$  ""void int"" """" 1e23 // 
-'dsq' {} -> test^void,5,6,7 \n 5e-3 5e6 8.0, /**";
-
-            var tokens = new Lexer(text).Lex().ToList();
-
-            foreach (var token in tokens)
+            try
             {
-                Console.WriteLine(token.ToString());
+                var lexer = new Lexer();
+                using (StreamReader sr = new StreamReader("../../input.txt"))
+                {
+                    String line = sr.ReadToEnd();
+                    if (line.Length > 0)
+                    {
+                        lexer.SetLine(line);
+                    }
+                }
+                
+                var allTokens = lexer.GetAllTokens();
+
+                foreach (var token in allTokens)
+                {
+                    Console.WriteLine(token.ToString());
+                }
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("The input file could not be read:");
+                Console.WriteLine(e.Message);
+            }            
         }
     }
 }

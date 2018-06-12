@@ -6,13 +6,21 @@ namespace Lexer
 {
     public class Lexer
     {
-        private Tokenizer Tokenizer { get; }
+        private Tokenizer Tokenizer { get; set; }
 
         private List<IMatcher> Matchers { get; set; }
 
-        public Lexer(String source)
+        private IEnumerable<Token> _allTokens = Enumerable.Empty<Token>();
+
+        public void SetLine(String source)
         {
             Tokenizer = new Tokenizer(source);
+            _allTokens = _allTokens.Concat(Lex().ToList());
+        }
+        
+        public IEnumerable<Token> GetAllTokens()
+        {
+            return _allTokens.ToList();
         }
 
         public IEnumerable<Token> Lex()
