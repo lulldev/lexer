@@ -1,2 +1,22 @@
-321dsa void inT321  @ # & $$  ""void int"" """" 1e23 // 
-'dsq' {} -> test^void,5,6,7 \n 5e-3 5e6 8.0, /**
+using System;
+
+namespace Lexer
+{
+    public class Token
+    {
+        public TokenType TokenType { get; }
+
+        public String TokenValue { get; }
+
+        public Token(TokenType tokenType, String tokenValue = null)
+        {
+            TokenType = tokenType;
+            TokenValue = tokenValue;
+        }
+
+        public override string ToString()
+        {
+            return TokenType + ": " + TokenValue;
+        }
+    }
+}
